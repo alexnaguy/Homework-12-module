@@ -35,7 +35,35 @@ class Fraction:
         return f"{self.numerator}/{self.denominator}"
 
 
-# Пример использования класса и модульного тестирования
+# Тестирование дробей
+class FractionTest(unittest.TestCase):
+    def test_addition(self):
+        fraction1 = Fraction(1, 2)
+        fraction2 = Fraction(1, 3)
+        result = fraction1 + fraction2
+        self.assertEqual(str(result), "5/6")
+
+    def test_subtraction(self):
+        fraction1 = Fraction(3, 4)
+        fraction2 = Fraction(1, 4)
+        result = fraction1 - fraction2
+        self.assertEqual(str(result), "8/16")
+
+    def test_multiplication(self):
+        fraction1 = Fraction(2, 3)
+        fraction2 = Fraction(3, 4)
+        result = fraction1 * fraction2
+        self.assertEqual(str(result), "6/12")
+
+    def test_division(self):
+        fraction1 = Fraction(3, 5)
+        fraction2 = Fraction(2, 1)
+        result = fraction1 / fraction2
+        self.assertEqual(str(result), "3/10")
+
+if __name__ == "__main__":
+    unittest.main()
+
 
 
 
