@@ -22,4 +22,4 @@ class Films(Model):
                f"{self.year} \n" \
                f"{self.description}" \
                f"{self.actors}" \
-               f"{self.duration}"\
+               f"{self.duration}"
