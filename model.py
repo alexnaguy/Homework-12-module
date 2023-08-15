@@ -9,7 +9,7 @@ class Model:
     @staticmethod
     def get_recipe_from_db():
 
-        recipe = Recipe.select().where(Recipe.cuisine == "russia")
+        recipe = Recipe.select().where(Recipe.cuisine == "Русская")
         return recipe
 
     @staticmethod

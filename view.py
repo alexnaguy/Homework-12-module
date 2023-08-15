@@ -1,4 +1,4 @@
-from films import Films, db
+from receipe import Recipe, db
 import datetime
 from model import Model
 from controller import Controller
@@ -28,14 +28,16 @@ class View:
         #self.__controller.get_films()
         """ Сценарий 2. Добавить новую статью """
 
-        title = "Оно",
-        director = "Крэзи До",
-        year = "2020",
-        description = "Очень страшное кино",
-        actors = "Актеры очень много",
-        duration = "2 часа"
-        film = (title, director, year, description, actors, duration)
-        self.__controller.add_film(film)
+        title = "Пельмени"
+        author = "Русское народное"
+        description = "Вкусные пельмени домашние"
+        ingredients = "Тесто, мясо,перец, майонез"
+        cuisine = "Русская"
+
+
+        recipe = (title, author, description, ingredients, cuisine)
+
+        self.__controller.add_recipe(recipe)
 
 
     def __del__(self):
