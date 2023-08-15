@@ -34,9 +34,7 @@ class View:
         ingredients = "Тесто, мясо,перец, майонез"
         cuisine = "Русская"
 
-
         recipe = (title, author, description, ingredients, cuisine)
-
         self.__controller.add_recipe(recipe)
 
 
