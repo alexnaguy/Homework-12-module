@@ -1,0 +1,25 @@
+from receipe import  Recipe
+from datetime import date
+
+class Model:
+    """ Отвечает за внутреннюю логику работы программы.
+    Здесь мы можем скрыть способы хранения данных, а также правила и алгоритмы обработки информации."""
+
+
+    @staticmethod
+    def get_recipe_from_db():
+
+        recipe = Recipe.select().where(Recipe.cuisine == "russia")
+        return recipe
+
+    @staticmethod
+    def add_recipe(recipe: tuple):
+        title, author, description, ingredients, cuisine = recipe
+
+        Recipe.create(title = title,
+                      author = author,
+                      description = description,
+                      ingredients = ingredients,
+                      cuisine = cuisine
+
+                      )
