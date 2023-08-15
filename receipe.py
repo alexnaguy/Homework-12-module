@@ -7,6 +7,7 @@ class Recipe(Model):
 
     class Meta:
         database = db
+        db_table = "recipe"
 
     title = CharField()
     author = CharField()

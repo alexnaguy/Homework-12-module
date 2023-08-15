@@ -25,7 +25,7 @@ class View:
     def main(self):
 
         """ Сценарий 1. Вывести пользователю все статьи подряд """
-        #self.__controller.get_films()
+        self.__controller.get_recipe()
         """ Сценарий 2. Добавить новую статью """
 
         title = "Пельмени"

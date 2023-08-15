@@ -19,9 +19,10 @@ class Controller:
     def get_recipe(self) -> None:
         # Запрос данных из Модели
         data = self.__model.get_recipe_from_db()
+
         # Отдать данные на представление
         self.__view.output_recipes(data)
 
     def add_recipe(self, recipe: tuple):
         # Запрос на добавление статьи
-        self.__model.add_recipe(recipe)
+        self.__model.add_recipe_in_bd(recipe)

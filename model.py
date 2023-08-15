@@ -8,12 +8,11 @@ class Model:
 
     @staticmethod
     def get_recipe_from_db():
-
-        recipe = Recipe.select().where(Recipe.cuisine == "Русская")
-        return recipe
+        recipes = Recipe.select().where(Recipe.cuisine == "Русская")
+        return recipes
 
     @staticmethod
-    def add_recipe(recipe: tuple):
+    def add_recipe_in_bd(recipe: tuple):
         title, author, description, ingredients, cuisine = recipe
 
         Recipe.create(title = title,
