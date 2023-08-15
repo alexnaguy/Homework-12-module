@@ -18,7 +18,7 @@ class View:
         db.connect()
 
     @staticmethod
-    def output_recipe(recipess):
+    def output_recipes(recipess):
         for item in recipess:
             print(item)
 
