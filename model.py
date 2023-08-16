@@ -1,5 +1,5 @@
-from receipe import  Recipe
-from datetime import date
+from receipe import Recipe
+
 
 class Model:
     """ Отвечает за внутреннюю логику работы программы.

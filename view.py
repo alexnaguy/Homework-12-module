@@ -1,7 +1,5 @@
 from receipe import Recipe, db
-import datetime
-from model import Model
-from controller import Controller
+
 
 
 
@@ -25,7 +23,7 @@ class View:
     def main(self):
 
         """ Сценарий 1. Вывести пользователю все статьи подряд """
-        self.__controller.get_recipe()
+        #self.__controller.get_recipe()
         """ Сценарий 2. Добавить новую статью """
 
         title = "Пельмени"
@@ -34,7 +32,7 @@ class View:
         ingredients = "Тесто, мясо,перец, майонез"
         cuisine = "Русская"
 
-        recipe = (title, author, description, ingredients, cuisine)
+        recipe = title, author, description, ingredients, cuisine
         self.__controller.add_recipe(recipe)
 
 

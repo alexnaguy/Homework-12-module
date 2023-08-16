@@ -22,3 +22,6 @@ def __str__(self):
                f"{self.description}" \
                f"{self.ingridients}" \
                f"{self.cuisine} "
+
+# db.connect()
+# db.create_tables([Recipe])
